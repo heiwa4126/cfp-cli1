@@ -8,7 +8,9 @@
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\""
+		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\"",
+		"create": "wrangler pages project create cfp-cli1 --production-branch main",
+		"deploy": "wrangler pages deploy"
 	},
 	"dependencies": {
 		"react": "^19.1.0",
