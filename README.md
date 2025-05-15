@@ -21,7 +21,7 @@ pnpm add -D wrangler
 
 # Cloudflare Pages にプロジェクト作る
 wrangler pages project create cfp-cli1 --production-branch main # → run-scriptsに書いた。`pnpm run create`
-## 初めての時はここでauthentication処理があるはず
+## 初めての時はここで authentication 処理があるはず
 
 # ビルドしてデプロイ
 pnpm build
@@ -29,7 +29,7 @@ wrangler pages deploy   # wrangler.toml 見てやってくれる → run-scripts
 
 # んでプレビュー用のブランチで作業
 git switch -c dev
-## いろいろ作業
+## いろいろ修正...
 pnpm build
 pnpm run deploy		# カレントブランチの名前でプレビューデプロイされる
 ```

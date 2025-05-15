@@ -1,8 +1,4 @@
 name = "cfp-cli1"
-compatibility_date = "2024-05-15"
+compatibility_date = "2024-05-07"
+# workerd モジュールのバージョンに合わせると良い
 pages_build_output_dir = "dist"
-
-# [build]
-# command = "pnpm install --frozen-lockfile && pnpm run build"
-# これ書くと `wrangler pages dev ...` する毎にビルドされてしまうので
-# あきらめて Cloudflare コンソールの方で記述して
