@@ -20,12 +20,12 @@ pnpm add -D wrangler
 # `git init` して mainブランチにしておく
 
 # Cloudflare Pages にプロジェクト作る
-wrangler pages project create cfp-cli1 --production-branch main # → run-scriptsに書いた。`pnpm run create`
+pnpm exec wrangler pages project create cfp-cli1 --production-branch main # → run-scriptsに書いた。`pnpm run create`
 ## 初めての時はここで authentication 処理があるはず
 
 # ビルドしてデプロイ
 pnpm build
-wrangler pages deploy   # wrangler.toml 見てやってくれる → run-scriptsに書いた。`pnpm run deploy`
+pnpm exec wrangler pages deploy   # wrangler.toml 見てやってくれる → run-scriptsに書いた。`pnpm run deploy`
 
 # んでプレビュー用のブランチで作業
 git switch -c dev
@@ -35,7 +35,7 @@ pnpm run deploy		# カレントブランチの名前でプレビューデプロ�
 
 # いろいろ動かしたら
 # Cloudflare Pages から消す
-wrangler pages project delete cfp-cli1
+pnpm exec wrangler pages project delete cfp-cli1
 ```
 
 ## 注意
