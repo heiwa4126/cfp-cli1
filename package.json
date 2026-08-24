@@ -1,14 +1,15 @@
 {
 	"name": "cfp-cli1",
-	"private": true,
 	"version": "0.0.0",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
-		"lint": "eslint .",
+		"lint": "oxlint",
 		"preview": "vite preview",
-		"format": "biome format --write . && dprint fmt  && textlint --fix \"**/*.md\"",
+		"format": "oxfmt",
+		"check": "oxfmt && oxlint --fix",
 		"create": "wrangler pages project create cfp-cli1 --production-branch main",
 		"deploy": "wrangler pages deploy"
 	},
@@ -18,16 +19,16 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@types/react": "^19.2.17",
-		"@types/react-dom": "^19.2.3",
-		"@vitejs/plugin-react": "^6.0.4",
-		"eslint": "^10.8.0",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.4",
+		"@vitejs/plugin-react": "^6.1.0",
+		"eslint": "^10.9.0",
 		"eslint-plugin-react-hooks": "^7.1.1",
-		"eslint-plugin-react-refresh": "^0.5.3",
-		"globals": "^17.8.0",
+		"eslint-plugin-react-refresh": "^0.5.4",
+		"globals": "^17.11.0",
 		"typescript": "~7.0.2",
-		"typescript-eslint": "^8.65.0",
-		"vite": "^8.1.5",
-		"wrangler": "^4.115.0"
+		"typescript-eslint": "^8.67.0",
+		"vite": "^8.2.2",
+		"wrangler": "^4.125.0"
 	}
 }
