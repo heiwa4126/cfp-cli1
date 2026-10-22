@@ -11,6 +11,8 @@
     "preview": "vite preview",
     "format": "oxfmt",
     "check": "oxfmt && oxlint --fix",
+    "login": "wrangler login",
+    "login-remote": "wrangler login --remote",
     "create": "wrangler pages project create cfp-cli1 --production-branch main",
     "deploy": "wrangler pages deploy"
   },

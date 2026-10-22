@@ -52,7 +52,7 @@ deploy 前の build 忘れがち。
 - **悪い点**
   - wrangler まわりのパッケージが若干大きい
   - 修正後 build & deploy を忘れる(超ありそう)
-  - (嘘でした。`wrangler pages deploy` で勝手にやってくれる。) functions が別ビルドらしい。参考: [functions build](https://developers.cloudflare.com/workers/wrangler/commands/#functions-build)
+  - (嘘でした。`wrangler pages deploy`で勝手にやってくれる。) functions が別ビルドらしい。参考: [functions build](https://developers.cloudflare.com/workers/wrangler/commands/#functions-build)
     - functions build はサイズ見るぐらい? 2023 年 10 月ごろに Free では 3MB、paid では 10GB limit
 
 ## 参考
